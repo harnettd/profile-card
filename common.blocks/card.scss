@@ -1,0 +1,26 @@
+@import "colors";
+@import "fonts";
+
+.bordered {
+    border: 1px solid black;
+}
+
+.card {
+
+    &__name {}
+
+    &__age {}
+
+    &__city {}
+
+    &__divider {}
+
+    &__stat-row {}
+
+    &__stat-col {}
+
+    &__stat {}
+
+    &__stat-name {}
+
+}
