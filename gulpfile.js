@@ -3,6 +3,7 @@ const { src, dest, series } = require("gulp");
 const clean = require("gulp-clean");
 const sass = require("gulp-sass")(require("sass"));
 const sourcemaps = require("gulp-sourcemaps");
+const cleanCSS = require("gulp-clean-css");
 
 cssClean = () => {
     return src("bundles/*.css")
@@ -18,12 +19,13 @@ cssTranspile = () => {
     .pipe(dest("bundles"))
 }
 
-cssMinify = done => {
-    console.log("Minify");
-    done();
+cssMinify = () => {
+    return src("bundles/styles.css")
+    .pipe(cleanCSS())
+    .pipe(dest("bundles"))
 }
 
 exports.cssClean = cssClean;
 exports.cssTranspile = cssTranspile;
 exports.cssMinify = cssMinify;
-exports.default = series(clean, cssTranspile, cssMinify); 
+exports.default = series(cssClean, cssTranspile, cssMinify); 
