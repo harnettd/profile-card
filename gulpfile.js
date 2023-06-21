@@ -19,6 +19,7 @@ cssTranspile = () => {
     .pipe(dest("bundles"))
 }
 
+// TODO: fix cssMinify
 cssMinify = () => {
     return src("bundles/styles.css")
     .pipe(cleanCSS())
