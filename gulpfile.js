@@ -4,6 +4,7 @@ const clean = require("gulp-clean");
 const sass = require("gulp-sass")(require("sass"));
 const sourcemaps = require("gulp-sourcemaps");
 const cleanCSS = require("gulp-clean-css");
+const rename = require("gulp-rename");
 
 cssClean = () => {
     return src("bundles/*.css")
@@ -19,11 +20,11 @@ cssTranspile = () => {
     .pipe(dest("bundles"))
 }
 
-// TODO: fix cssMinify
 cssMinify = () => {
     return src("bundles/styles.css")
+    .pipe(rename("bundles/styles.min.css"))
     .pipe(cleanCSS())
-    .pipe(dest("bundles"))
+    .pipe(dest("."))
 }
 
 exports.cssClean = cssClean;
