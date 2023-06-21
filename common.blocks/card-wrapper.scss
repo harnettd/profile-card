@@ -1,7 +1,5 @@
+@import "colors";
+
 .card-wrapper {
-    background-color: grey;
-    background-image: url("../design/desktop-design.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    min-height: 0;
+    background-color: $dark-gray;
 }
