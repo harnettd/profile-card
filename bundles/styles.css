@@ -17,8 +17,10 @@ html {
   text-align: center;
 }
 
-.card-wrapper {
-  background-color: hsl(0, 0%, 59%);
+.page {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("../images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
 }
 
 .bordered {
