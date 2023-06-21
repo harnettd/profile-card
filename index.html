@@ -15,32 +15,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- local stylesheet -->
-  <link rel="stylesheet" href="bundles/style.min.css">
+  <link rel="stylesheet" href="bundles/styles.css">
 
   <title>Frontend Mentor | Profile card component</title>
 </head>
 
 <body class="page">
   <main class="card-wrapper">
-    <div class="card bordered">
-      <div>
+    <div class="card">
+
+      <div class="card__img-wrapper">
+        <img class="card__img" src="images/image-victor.jpg" alt="photo of Victor Crest">
+      </div>
+
+      <div class="card__name-and-age">
         <span class="card__name">Victor Crest</span>
         <span class="card__age">26</span>
       </div>
       <div class="card__city">London</div>
 
-      <br class="card__divider">
+      <hr class="card__divider">
 
       <div class="card__stat-row">
-        <div class="card__stat-col">
+        <div>
           <div class="card__stat">80K</div>
           <div class="card__stat-name">Followers</div>
         </div>
-        <div class="card__stat-col">
+        <div class="card__stat-col-middle">
           <div class="card__stat">803K</div>
           <div class="card__stat-name">Likes</div>
         </div>
-        <div class="card__stat-col">
+        <div>
           <div class="card__stat">1.4K</div>
           <div class="card__stat-name">Photos</div>
         </div>

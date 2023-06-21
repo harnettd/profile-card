@@ -6,21 +6,103 @@
 }
 
 .card {
+    background-color: white;
+    margin-top: 17.2rem;
+    opacity: 0.5;
 
-    &__name {}
+    background-image: url("../images/bg-pattern-card.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 35rem;
 
-    &__age {}
+    &__img-wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 8.7rem 0 2rem;
+    }
 
-    &__city {}
+    &__img {
+        border: 0.5rem solid white;
+        border-radius: 50%;
+        display: block;
+        height: 9.6rem;
+        overflow: hidden;
+        width: 9.6rem;
+    }
 
-    &__divider {}
+    &__name-and-age {
+        margin: 0 0 0.7rem;
+        text-align: center;
+    }
 
-    &__stat-row {}
+    &__name {
+        font: {
+            family: $font-stack;
+            size: 1.8rem;
+            weight: $bold;
+        }
 
-    &__stat-col {}
+        margin-right: 0.6rem;
+    }
 
-    &__stat {}
+    &__age {
+        font: {
+            family: $font-stack;
+            size: 1.8rem;
+            weight: $regular;
+        }
+    }
 
-    &__stat-name {}
+    &__city {
+        font: {
+            family: $font-stack;
+            size: 1.4rem;
+            weight: $regular;
+        }
+
+        margin: 0 0 2.3rem;
+        text-align: center;
+    }
+
+    &__divider {
+        border-width: 0.1rem 0 0;
+        width: 100%;
+    }
+
+    &__stat-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 2.5rem 5.4rem 2.5rem 4.9rem;
+    }
+
+    &__stat-col-middle {
+        margin-right: 0.8rem;
+    }
+
+    &__stat {
+        font: {
+            family: $font-stack;
+            size: 1.8rem;
+            weight: $bold;
+        }
+
+        margin: 0 0 0.4rem;
+        text-align: center;
+    }
+
+    &__stat-name {
+        font: {
+            family: $font-stack;
+            size: 1rem;
+            weight: $regular;
+        }
+
+        letter-spacing: 0.15rem;
+        text-align: center;
+    }
 
 }
