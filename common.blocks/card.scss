@@ -37,21 +37,26 @@
 
     &__name {
         @include font-sans(1.8rem, $bold);
+        color: $very-dark-desaturated-blue;
         margin-right: 0.6rem;
     }
 
     &__age {
         @include font-sans(1.8rem, $regular);
+        color: $dark-grayish-blue;
     }
 
     &__city {
         @include font-sans(1.4rem, $regular);
+        color: $dark-grayish-blue;
         margin: 0 0 2.3rem;
         text-align: center;
     }
 
     &__divider {
+        border-color: $dark-gray;
         border-width: 0.1rem 0 0;
+        opacity: 0.15;
         width: 100%;
     }
 
@@ -67,12 +72,14 @@
 
     &__stat {
         @include font-sans(1.8rem, $bold);
+        color: $very-dark-desaturated-blue;
         margin: 0 0 0.4rem;
         text-align: center;
     }
 
     &__stat-name {
         @include font-sans(1rem, $regular);
+        color: $dark-grayish-blue;
         letter-spacing: 0.15rem;
         text-align: center;
     }

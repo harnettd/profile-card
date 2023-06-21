@@ -1,4 +1,3 @@
-// const gulp = require("gulp");
 const { src, dest, series } = require("gulp");
 const clean = require("gulp-clean");
 const sass = require("gulp-sass")(require("sass"));
