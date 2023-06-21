@@ -2,7 +2,9 @@
 
 // TODO: add and position background-images
 .page {
-    background-color: $dark-cyan;
-    background-image: url("../images/bg-pattern-top.svg");
-    background-repeat: no-repeat;
+    background: {    
+        color: $dark-cyan;
+        image: url("../images/bg-pattern-top.svg");
+        repeat: no-repeat;
+    }
 }

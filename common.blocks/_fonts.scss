@@ -2,3 +2,11 @@ $font-stack: 'Kumbh Sans', sans-serif;
 
 $regular: 400;
 $bold: 700;
+
+@mixin font-sans($size, $weight) {
+    font: {
+        family: $font-stack;
+        size: $size;
+        weight: $weight;
+    }
+}

@@ -23,10 +23,6 @@ html {
   background-repeat: no-repeat;
 }
 
-.bordered {
-  border: 1px solid black;
-}
-
 .card {
   background-color: white;
   background-image: url("../images/bg-pattern-card.svg");
@@ -98,5 +94,13 @@ html {
   font-weight: 400;
   letter-spacing: 0.15rem;
   text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 /*# sourceMappingURL=styles.css.map */

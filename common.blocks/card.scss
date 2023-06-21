@@ -1,16 +1,15 @@
 @import "colors";
 @import "fonts";
 
-.bordered {
-    border: 1px solid black;
-}
-
 .card {
-    background-color: white;
-    background-image: url("../images/bg-pattern-card.svg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: auto;
+    background: {
+        color: white;
+        image: url("../images/bg-pattern-card.svg");
+        position: center top;
+        repeat: no-repeat;
+        size: auto;
+    }
+
     border-radius: 1.5rem;
     overflow: hidden;
     width: 35rem;
@@ -37,30 +36,16 @@
     }
 
     &__name {
-        font: {
-            family: $font-stack;
-            size: 1.8rem;
-            weight: $bold;
-        }
-
+        @include font-sans(1.8rem, $bold);
         margin-right: 0.6rem;
     }
 
     &__age {
-        font: {
-            family: $font-stack;
-            size: 1.8rem;
-            weight: $regular;
-        }
+        @include font-sans(1.8rem, $regular);
     }
 
     &__city {
-        font: {
-            family: $font-stack;
-            size: 1.4rem;
-            weight: $regular;
-        }
-
+        @include font-sans(1.4rem, $regular);
         margin: 0 0 2.3rem;
         text-align: center;
     }
@@ -81,23 +66,13 @@
     }
 
     &__stat {
-        font: {
-            family: $font-stack;
-            size: 1.8rem;
-            weight: $bold;
-        }
-
+        @include font-sans(1.8rem, $bold);
         margin: 0 0 0.4rem;
         text-align: center;
     }
 
     &__stat-name {
-        font: {
-            family: $font-stack;
-            size: 1rem;
-            weight: $regular;
-        }
-
+        @include font-sans(1rem, $regular);
         letter-spacing: 0.15rem;
         text-align: center;
     }
