@@ -6,17 +6,18 @@ const cleanCSS = require("gulp-clean-css");
 const rename = require("gulp-rename");
 
 cssClean = () => {
-    return src("bundles/*.css")
-    .pipe(src("bundles/*.css.map"))
+    return src("bundles/*")
+    .pipe(src("common.blocks/*.css"))
+    .pipe(src("common.blocks/*.css.map"))
     .pipe(clean());
 }
 
 cssTranspile = () => {
-    return src("common.blocks/styles.scss")
+    return src("common.blocks/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
     .pipe(sourcemaps.write("."))
-    .pipe(dest("bundles"))
+    .pipe(dest("common.blocks"))
 }
 
 cssMinify = () => {
