@@ -1,7 +1,7 @@
 .page {
   background-color: hsl(185, 75%, 39%);
   background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-  background-position: -61% 200%, 149% -146%;
+  background-position: right 51.5vw bottom 35vh, left 49vw top 49vh;
   background-repeat: no-repeat, no-repeat;
-  background-size: 97.8rem 97.8rem, 97.8rem 97.8rem;
+  background-size: auto, auto;
 }

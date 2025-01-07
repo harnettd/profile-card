@@ -4,8 +4,12 @@
     background: {    
         color: $dark-cyan;
         image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-        position: -61% 200%, 149% -146%;
+        position: right 51.5vw bottom 35vh, left 49vw top 49vh;
         repeat: no-repeat, no-repeat;
-        size: 97.8rem 97.8rem, 97.8rem 97.8rem;
+        size: auto, auto;
     }
+
+    // @media screen and (min-width: 550px) {
+    //     background-image: url("../design/desktop-design.jpg"), url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    // }
 }
