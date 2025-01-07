@@ -23,7 +23,7 @@
   border: 0.5rem solid white;
   border-radius: 50%;
   display: block;
-  height: 9.6rem;
+  height: auto;
   overflow: hidden;
   width: 9.6rem;
 }
