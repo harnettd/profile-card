@@ -8,6 +8,11 @@
   overflow: hidden;
   width: 35rem;
 }
+@media screen and (max-width: 575px) {
+  .card {
+    width: 32.5rem;
+  }
+}
 .card__img-wrapper {
   align-items: center;
   display: flex;

@@ -21,6 +21,11 @@ html {
   background-repeat: no-repeat, no-repeat;
   background-size: auto, auto;
 }
+@media screen and (max-width: 575px) {
+  .page {
+    background-position: right 44vw bottom 41vh, left 42vw top 44vh;
+  }
+}
 .card {
   background-color: white;
   background-image: url("../images/bg-pattern-card.svg");
@@ -30,6 +35,11 @@ html {
   border-radius: 1.5rem;
   overflow: hidden;
   width: 35rem;
+}
+@media screen and (max-width: 575px) {
+  .card {
+    width: 32.5rem;
+  }
 }
 .card__img-wrapper {
   align-items: center;

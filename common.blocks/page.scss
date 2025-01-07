@@ -1,3 +1,4 @@
+@import "breakpoints";
 @import "colors";
 
 .page {
@@ -9,7 +10,7 @@
         size: auto, auto;
     }
 
-    // @media screen and (min-width: 550px) {
-    //     background-image: url("../design/desktop-design.jpg"), url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-    // }
+    @media screen and (max-width: $x-small) {
+        background-position: right 44vw bottom 41vh, left 42vw top 44vh;
+    }
 }

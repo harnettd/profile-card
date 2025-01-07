@@ -5,3 +5,8 @@
   background-repeat: no-repeat, no-repeat;
   background-size: auto, auto;
 }
+@media screen and (max-width: 575px) {
+  .page {
+    background-position: right 44vw bottom 41vh, left 42vw top 44vh;
+  }
+}
